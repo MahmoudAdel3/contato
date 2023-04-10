@@ -408,9 +408,9 @@ input[type="checkbox"]:checked::before {
         font-size: 40px;
     }
 
-    .wizard .nav-tabs>li a i {
+    /* .wizard .nav-tabs>li a i {
         display: none;
-    }
+    } */
 
     .signup-logo-header .navbar-toggle {
         margin: 0;
@@ -423,6 +423,10 @@ input[type="checkbox"]:checked::before {
 
     .signup-logo-header .header-flex {
         display: block;
+    }
+
+    .wizard .nav-tabs>li {
+        width: 23%;
     }
 }
 
