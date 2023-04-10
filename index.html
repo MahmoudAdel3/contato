@@ -1,3 +1,410 @@
-<h1>
-hello
-</h1>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:url" content="https://thecontrato.com/">
+    <meta property="og:title" content="كونتراتو | التسجيل العقاري">
+    <meta property="og:description"
+        content="كونتراتو يوفر للمستخدم نماذج عقود تم اعدادها من خلال خبراء ممارسين لتسهيل التعاقد بين اطراف المعاملات المختلفه طبقا للقانون">
+    <link href="./img/favicon.png" rel="icon">
+    <title>كونتراتو | التسجيل العقاري</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.4.0/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="./css/fontawesomeBootstrapSwal.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"=></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/i18n/defaults-ar_AR.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <meta name="Header" content="الاستشارات">
+    <meta name="description" content="احجز جلسة استشارتك القانونية الاّن مع كونتراتو ، اعثر على المحامي المناسب لك استناًدا إلى
+سنوات الخبرة والمراجعات واللغة.">
+</head>
+
+<body class="rtlClass">
+    <div class="content" id="main">
+        <div class="container">
+            <div class="row pos_fixed LayoutHeader">
+                <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+                    <div class="">
+                        <div class="navbar-header nav-header-customprof">
+                            <a class="navbar-brand" href="/" tabindex="-1" style="filter: brightness(1);">
+                                <img src="./img/logo.png" alt="" class="img-fluid" width="134" height="35"
+                                    style="height:42px;width:auto;margin: -8px 20px 0px;">
+                            </a>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-primary-collapse" tabindex="-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="showProfResponsive notificationdp notificationDropD">
+                                <ul class="notification-drop">
+                                    <li class="item">
+                                        <i class="fa fa-bell-o notification-bell" aria-hidden="true"></i> <span
+                                            class="btn__badge pulse-button notification notificationCountUser">0</span>
+                                        <ul class="notiContentUser">
+                                            <li>
+                                                <a class="notification-btn" href="/Notification/Index">عرض كل
+                                                    الإشعارات</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+                            <ul class="nav navbar-nav navbar-left">
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <section class="signup-step-container">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <div class="wizard">
+                                <div class="wizard-inner">
+                                    <div class="connecting-line"></div>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab"
+                                                aria-expanded="true"><span class="round-tab">1 </span>
+                                                <i>
+                                                    بيانات المالك
+                                                </i>
+                                            </a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"
+                                                aria-expanded="false"><span class="round-tab">2</span> <i>
+                                                    بيانات
+                                                    العقار
+                                                </i></a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span
+                                                    class="round-tab">3</span> <i>المستندات</i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <form role="form" action="" class="login-box">
+                                    <div class="tab-content" id="main_form">
+                                        <div class="tab-pane active" role="tabpanel" id="step1">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>الاسم الرباعي</label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>رقم الموبايل</label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>البريد الالكتروني</label>
+                                                        <input type="email" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>كلمة المرور</label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <ul class="list-inline pull-right">
+                                                <li><button type="button" class="default-btn next-step">التالي</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="step2">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>نوع العقار</label>
+                                                    <select class="form-control selectpicker" dir="rtl"
+                                                        data-title="نوع العقار">
+                                                        <option>
+                                                            شقة
+                                                        </option>
+                                                        <option>
+                                                            فيلا
+                                                        </option>
+                                                        <option>
+                                                            ارض زراعية او صناعية
+                                                        </option>
+                                                        <option>
+                                                            مخزن
+                                                        </option>
+                                                        <option>
+                                                            محل
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>مساحة العقار</label>
+                                                    <input type="number" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>المنطقة الجغرافية</label>
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>
+                                                        ههل لديك حصة في الارض؟
+                                                    </label>
+                                                    <label class="switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>
+                                                        هل تمتلك حصة في الجراج؟
+                                                    </label>
+                                                    <label class="switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>
+                                                        هل عقد الملكية ابتدائي ام نهائي؟
+                                                    </label>
+                                                    <label class="switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>
+                                                        هل عليه صحة توقيع؟
+                                                    </label>
+                                                    <label class="switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <ul class="list-inline pull-right">
+                                                <li>
+                                                    <button type="button" class="default-btn prev-step">السابق</button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="default-btn next-step">التالي</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="step3">
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="mb-10">مستندات الحيازة</label>
+                                                    <label for="files" class="drop-container">
+                                                        <span class="drop-title">قم بوضع الملفات هنا</span>
+
+                                                        <input type="file" required id="files">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="mb-10">صورة من بطاقة الرقم القومي</label>
+                                                    <label for="images" class="drop-container">
+                                                        <span class="drop-title">قم بوضع الملفات هنا</span>
+                                                        <input type="file" id="images" accept="image/*" required>
+                                                    </label>
+                                                    <!-- <input type="file" id="file"> -->
+
+                                                </div>
+                                            </div>
+
+                                            <ul class="list-inline pull-right">
+                                                <li>
+                                                    <button type="button" class="default-btn prev-step">السابق</button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="default-btn submit-step ">ارسال</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer id="footer" class="Display-none-inner">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <img src="./img/logo.png" alt="" class="img-fluid" width="129" height="34" style="  height:42px;width:auto;
+                                margin: -8px 0 39px;">
+                        <p>
+                            كونتراتو يوفر للمستخدم نماذج عقود تم اعدادها من خلال خبراء ممارسين لتسهيل التعاقد بين اطراف
+                            المعاملات المختلفه طبقا للقانون
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>كونتراتو</h4>
+                        <ul>
+                            <li><a tabindex="-1">الشروط و الاحكام</a></li>
+                            <li><a tabindex="-1">خدماتنا</a></li>
+                            <li><a tabindex="-1">مدونة كونتراتو</a></li>
+                            <li><a>انضم لنا</a></li>
+                            <li><a>أسئلة شائعة</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-contact">
+                        <h4>تواصل معنا</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/thecontrato/" rel="noopener noreferrer" target="_blank"
+                                class="facebook" tabindex="-1"><img src="./img/facebook.svg" width="18" height="18"
+                                    alt="facebook"></a>
+                            <a href="https://instagram.com/thecontrato" rel="noopener noreferrer" target="_blank"
+                                class="instagram" tabindex="-1"><img src="./img/instagram-sketched.svg" width="18"
+                                    height="18" alt="instagram"></a>
+                            <a href="https://www.linkedin.com/company/contrato-live/about/?viewAsMember=true"
+                                rel="noopener noreferrer" target="_blank" class="linkedin" tabindex="-1">
+                                <img src="./img/linkedin.svg" width="18" height="18" alt="linkedin"></a>
+                            <a href="https://wa.me/01026687286" rel="noopener noreferrer" target="_blank"
+                                class="linkedin" tabindex="-1"><i id="" class="fa fa-whatsapp"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-newsletter" style="display:inline-table">
+                        <h4>اشترك فى نشرتنا الاخبارية </h4>
+                        <div style="display:flex">
+                            <input type="Email" id="Email" name="Email" tabindex="-1">
+                            <input type="submit" value="اشترك" id="btnSubscribe" tabindex="-1">
+                        </div>
+                        <span id="Emailerror" class="error" style="display:none;color:red">ادخل بريد اليكترونى
+                            صحيح</span>
+                        <div class="footer-brand-logos">
+                            <div class="">
+                                <div class="ddinner">
+                                    <img src="./img/4-2-Fawry.png" width="132" height="40" alt="Fawry">
+                                    <img src="./img/meeza.png" width="46" height="40" alt="meeza">
+                                    <img src="./img/mastersecuritycode.png" width="100" height="40"
+                                        alt="mastersecuritycode">
+                                    <img src="./img/verified-by-visa-logo.png" width="77" height="40"
+                                        alt="verifiedbyvisa">
+                                    <img src="./img/godaddy-ssl.png" width="184" height="40" alt="godaddy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container bottom-footer ">
+            <div class="FooterCircle">
+                <img src="./img/back4.png" width="163" height="165" alt="footerLeftShape">
+            </div>
+            <div class="copyright">
+                ©
+                <span id="changeDateOfYear"></span> جميع الحقوق محفوظة ل <strong>كونتراتو</strong>.
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="backtotop"><a href="#"></a></div>
+</body>
+<script>
+    // ------------step-wizard-------------
+    $(document).ready(function () {
+        $('input[type=file]').change(function () {
+            var t = $(this).val();
+            var labelText = t.substr(12, t.length);
+            if (labelText)
+                $(this).prev('span').text(labelText);
+            else
+                $(this).prev('span').text('قم بوضع الملفات هنا');
+        })
+        $('.nav-tabs > li a[title]').tooltip();
+
+        //Wizard
+        $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+            var $target = $(e.target);
+
+            if ($target.parent().hasClass('disabled')) {
+                return false;
+            }
+        });
+
+        $(".next-step").click(function (e) {
+            var $active = $('.wizard .nav-tabs li.active');
+            $active.next().removeClass('disabled');
+            nextTab($active);
+
+        });
+        $(".prev-step").click(function (e) {
+            var $active = $('.wizard .nav-tabs li.active');
+            prevTab($active);
+
+        });
+
+        $(".submit-step").click(function (e) {
+            swal({
+                title: "شكرا",
+                text: "تم استلام البيانات بنجاح , سيصلك بريد الكتروني بالخطوات التاليه بعد قليل",
+                icon: "success",
+                button: "حسنا"
+            }).then((willDelete) => {
+               document.location.href = "submitted.html"
+            });;
+        });
+
+    });
+
+    function nextTab(elem) {
+        $(elem).next().find('a[data-toggle="tab"]').click();
+    }
+    function prevTab(elem) {
+        $(elem).prev().find('a[data-toggle="tab"]').click();
+    }
+
+</script>
+
+</html>
