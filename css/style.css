@@ -760,3 +760,34 @@ p {
     border-color: #ff2b00;
     border-radius: 1px
 }
+
+@media (max-width: 767px) {
+    .track {
+        height: 7px;
+    }
+    .track .icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px !important;
+    }
+
+    .track .text {
+        display: block;
+        margin-top: 20px;
+        transform: rotate(270deg);
+        white-space: nowrap;
+    }
+
+    .track .step {
+        width: 10%;
+        margin-top: -14px;
+    }
+
+    .track i {
+        line-height: 30px !important;
+    }
+
+    .track .step::before {
+        top: 14px;
+    }
+}
